@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "ae2regression",
+  "version": "${version}",
+
+  "name": "AE2 Regression",
+  "description": "Adds recipes to simplify AE2's complex progression for players seeking a more streamlined experience",
+  "authors": [
+    "johnnydouble",
+    "holozene"
+  ],
+  "contact": {
+    "website": "johnnydouble.dev"
+  },
+
+  "license": "MIT",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.johnnydouble.ae2regression.ae2regression.fabric.AE2RegressionFabric"
+    ]
+  },
+  "mixins": [
+    "ae2regression.mixins.json",
+    "ae2regression-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "minecraft": ">=1.18.2"
+  }
+}
